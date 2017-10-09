@@ -12,7 +12,6 @@ import socket
 #All the thanks to Philip Linghammar
 #Modified from https://github.com/xapax/oscp
 #Small modifications for CTFs
-#Make "/opt/ctf/templates/" directory and copy templates into there
 
 start = time.time()
 
@@ -316,7 +315,6 @@ print "!!!!            A multi-process service scanner        !!!!!"
 print "!!!!        dirb, nikto, ftp, ssh, mssql, pop3, tcp    !!!!!"
 print "!!!!                    udp, smtp, smb                 !!!!!"
 print "------------------------------------------------------------"
-print " Dependencies: /opt/ctf/templates/ folder with md templates "
 print "           Results are saved in /opt/ctf/results            "
 
 if not os.path.exists("/opt/ctf/results"):
