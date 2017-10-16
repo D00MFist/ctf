@@ -716,3 +716,15 @@ Accept-Encoding: gzip, deflate
 Host: 192.168.10.5
 Connection: Keep-Alive
 ```
+## Reverse
+
+```
+do all in vm
+1) detect it easy to grab strings
+2) sublime text
+3) immunity debuggger in windows is easiest
+4) view module (select app)
+5) searh for all refeed text strings (double click on an error message & success (set breakpoints)
+6) Dobule click in cpu for breakpoint
+7) inspect jumps
+8) mo
