@@ -40,23 +40,29 @@ nmap INSERTIPADDRESS -p- -A -T4 -sC
 
 ### Port 21 - FTP
 
-- FTP-Name:
-- FTP-version:
+- Name:
+- Version:
 - Anonymous login:
 
 INSERTFTPTEST
 
-
 ```
 nmap --script=ftp-anon,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 INSERTIPADDRESS
+
+Syntax ftp $IP
 ```
 
 ### Port 22 - SSH
 
 - Name:
 - Version:
+- Protocol:
+- RSA-key-fingerprint:
 - Takes-password:
-- If you have usernames test login with username:username
+If you have usernames test login with username:username
+```
+Syntax ssh username@$IP
+```
 
 INSERTSSHCONNECT
 
