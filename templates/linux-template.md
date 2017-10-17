@@ -849,3 +849,7 @@ Combine the provided passwd (passwd) and shadow (shadow)(shadow) and redirect th
 unshadow passwd shadow > unshadowed.txt
 john --wordlist=rockyou.txt --rules unshadowed.txt 
 ```
+## Web Server
+```
+python -m SimpleHTTPServer 8000
+```
