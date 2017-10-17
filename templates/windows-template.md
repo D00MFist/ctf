@@ -614,8 +614,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Win
 
 ## Loot
 
-- Proof:
-- Network secret:
+- Flags:
 - Password and hashes:
 - Dualhomed:
 - Tcpdump:
