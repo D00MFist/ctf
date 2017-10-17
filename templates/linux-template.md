@@ -838,3 +838,12 @@ exec "/bin/sh"
 ||
 ...
 ```
+## Password (Wordlists)
+```
+john --wordlist=test.txt --stdout --rules:Jumbo >> mutilated.txt
+crunch 10 10 -t ,%Curtains -o ./worlist.curtains
+```
+## Password Cracking
+```
+john --wordlist=rockyou.txt /root/filetocrack.txt
+```
