@@ -677,8 +677,7 @@ Require user interaction
 
 **Checklist**
 
-- Proof:
-- Network secret:
+- Flags:
 - Passwords and hashes:
 - Dualhomed:
 - Tcpdump:
@@ -688,18 +687,6 @@ Require user interaction
 - Browser:
 - Mail:
 
-
-### Proof
-
-```
-/root/proof.txt
-```
-
-### Network secret
-
-```
-/root/network-secret.txt
-```
 
 ### Passwords and hashes
 
@@ -766,7 +753,17 @@ echo $XDG_CURRENT_DESKTOP
 echo $GDMSESSION
 ```
 
-## How to replicate:
+------------------------------------------------------------------------
+
+
+
+
+----------------------------- NOTES ------------------------------------
+
+
+
+
+------------------------------------------------------------------------
 
 
 ## XSS
@@ -853,3 +850,4 @@ john --wordlist=rockyou.txt --rules unshadowed.txt
 ```
 python -m SimpleHTTPServer 8000
 ```
+## How to replicate to gain access again:
