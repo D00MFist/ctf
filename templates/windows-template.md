@@ -624,10 +624,6 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\Win
 - SSH-keys:
 - Browser:
 
-### Proof
-
-### Network secret
-
 ### Passwords and hashes
 
 ```
@@ -695,8 +691,17 @@ dir /s
 
 ### SSH-keys
 
-## How to replicate:
+------------------------------------------------------------------------
 
+
+
+
+----------------------------- Notes-------------------------------------
+
+
+
+
+------------------------------------------------------------------------
 
 ## XSS
 
@@ -782,3 +787,4 @@ john --wordlist=rockyou.txt --rules unshadowed.txt
 ```
 python -m SimpleHTTPServer 8000
 ```
+## How to replicate to otbain access again:
