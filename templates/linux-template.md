@@ -845,5 +845,7 @@ crunch 10 10 -t ,%Curtains -o ./worlist.curtains
 ```
 ## Password Cracking
 ```
-john --wordlist=rockyou.txt /root/filetocrack.txt
+Combine the provided passwd (passwd) and shadow (shadow)(shadow) and redirect them to a file (> unshadowed.txt)
+unshadow passwd shadow > unshadowed.txt
+john --wordlist=rockyou.txt --rules unshadowed.txt 
 ```
