@@ -851,4 +851,8 @@ john --wordlist=rockyou.txt --rules unshadowed.txt
 ```
 python -m SimpleHTTPServer 8000
 ```
+## Quick Base64 Decoder
+```
+echo aGVsbG8gd2hpdGUgaGF0Cg== | base64 -d
+```
 ## How to replicate to gain access again:
