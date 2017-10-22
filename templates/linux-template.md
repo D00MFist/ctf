@@ -469,8 +469,11 @@ python linprivchecker.py extended
 # Add user to sudoers
 echo "hacker ALL=(ALL:ALL) ALL" >> /etc/sudoers
 ```
-
-
+## Dirty COw
+```
+uname -a or uname -r
+Works on Linux Kernel 2.6.22 < 3.9
+```
 ### Basic info
 
 - OS:
