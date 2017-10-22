@@ -895,6 +895,9 @@ irb(main:001:0> exec "/bin/sh"
 python: exit_code = os.system('/bin/sh') output = os.popen('/bin/sh').read()
 also try the shell spawning methods above
 ```
-
+## Metasploit Slow Search Fix
+```
+db_rebuild_cache
+```
 
 ## How to replicate to gain access again:
