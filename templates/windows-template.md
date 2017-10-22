@@ -791,4 +791,8 @@ python -m SimpleHTTPServer 8000
 ```
 echo aGVsbG8gd2hpdGUgaGF0Cg== | base64 -d
 ```
+## Metasploit Slow Search Fix
+```
+db_rebuild_cache
+```
 ## How to replicate to otbain access again:
