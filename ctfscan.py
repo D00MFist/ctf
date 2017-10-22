@@ -182,7 +182,7 @@ def smtpEnum(ip_address, port):
 
 def smbNmap(ip_address, port):
     print "INFO: Detected SMB on " + ip_address + ":" + port
-    smbNmap = "nmap --script=smb-enum-shares.nse,smb-ls.nse,smb-enum-users.nse,smb-mbenum.nse,smb-os-discovery.nse,smb-security-mode.nse,smbv2-enabled.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-regsvc-dos.nse,smbv2-enabled.nse %s -oN /opt/ctf/results/%s/smb_%s.nmap" % (ip_address, ip_address, ip_address)
+    smbNmap = "nmap --script=smb-enum-shares.nse,smb-ls.nse,smb-enum-users.nse,smb-mbenum.nse,smb-os-discovery.nse,smb-security-mode.nse,smb-vuln-cve2009-3103.nse,smb-vuln-ms06-025.nse,smb-vuln-ms07-029.nse,smb-vuln-ms08-067.nse,smb-vuln-ms10-054.nse,smb-vuln-ms10-061.nse,smb-vuln-regsvc-dos.nse,smb-vuln-ms17-010.nse %s -oN /opt/ctf/results/%s/smb_%s.nmap" % (ip_address, ip_address, ip_address)
     smbNmap_results = subprocess.check_output(smbNmap, shell=True)
     print bcolors.OKGREEN + "INFO: RESULT BELOW - Finished with SMB-Nmap-scan for " + ip_address + bcolors.ENDC
     print smbNmap_results
