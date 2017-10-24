@@ -904,5 +904,8 @@ also try the shell spawning methods above
 ```
 db_rebuild_cache
 ```
-
+## SQLMap
+```
+sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
+```
 ## How to replicate to gain access again:
