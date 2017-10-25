@@ -463,6 +463,7 @@ net users
 net user user1
 net localgroups
 accesschk.exe -uwcqv "Authenticated Users" *
+accesschk_v5.02.exe -uwcqv Authenticated Users * /accepteula
 
 netsh firewall show state
 netsh firewall show config
