@@ -597,9 +597,12 @@ Add this reg key:
 
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
 ```
-
-
-
+# Windows Exploit Suggester
+```
+windows-exploit-suggester.py --update
+windows-exploit-suggester.py --database 2014-06-06-mssb.xlsx --systeminfo win7sp1-systeminfo.txt 
+The output shows either public exploits (E), or Metasploit modules (M) as indicated by the character value
+```
 ------------------------------------------------------------------------
 
 
