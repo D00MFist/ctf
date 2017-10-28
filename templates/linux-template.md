@@ -818,6 +818,9 @@ perl —e 'exec "/bin/sh";'
 perl: exec "/bin/sh";
 ruby: exec "/bin/sh"
 lua: os.execute('/bin/sh')
+
+then to use normal linux commands like clear
+export TERM=linux
 ```
 ## (From within IRB)
 ```
