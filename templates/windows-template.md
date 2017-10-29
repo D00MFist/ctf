@@ -477,6 +477,8 @@ set PATH=%PATH%;C:\xampp\php
 
 
 ```
+#Metasploit
+post/multi/recon/local_exploit_suggester
 # Look for hotfixes
 systeminfo
 
