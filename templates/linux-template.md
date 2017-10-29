@@ -444,6 +444,9 @@ Here you will add all possible leads. What to try.
 ### Useful commands
 
 ```
+#Metasploit
+post/multi/recon/local_exploit_suggester
+
 # Spawning shell
 python -c 'import pty; pty.spawn("/bin/sh")'
 
