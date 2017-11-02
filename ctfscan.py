@@ -322,8 +322,8 @@ if not os.path.exists("/opt/ctf/results"):
 
 if len(sys.argv) < 2:
     print ""
-    print "Usage: python reconscan.py <ip> <ip> <ip>"
-    print "Example: python reconscan.py 192.168.1.101 192.168.1.102"
+    print "Usage: python ctfscan.py <ip> <ip> <ip>"
+    print "Example: python ctfscan.py 192.168.1.101 192.168.1.102"
     print ""
     print "############################################################"
     pass
