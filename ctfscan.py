@@ -231,7 +231,7 @@ def nmapScan(ip_address):
     print bcolors.OKGREEN + "INFO: Running general TCP/UDP nmap scans for " + ip_address + bcolors.ENDC
 
 
-    TCPSCAN = "nmap -sV -O -Pn -T4 -p- %s -oN '/opt/ctf/results/%s/%s.nmap'"  % (ip_address, ip_address, ip_address)
+    TCPSCAN = "nmap -sV -O -Pn -T4 %s -oN '/opt/ctf/results/%s/%s.nmap'"  % (ip_address, ip_address, ip_address)
     print bcolors.HEADER + TCPSCAN + bcolors.ENDC
     results = subprocess.check_output(TCPSCAN, shell=True)
     print bcolors.OKGREEN + "INFO: RESULT BELOW - Finished with BASIC Nmap-scan for " + ip_address + bcolors.ENDC
