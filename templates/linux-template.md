@@ -361,6 +361,10 @@ sqlmap -u http://INSERTIPADDRESS --dbms=mysql --crawl=3
 - Attack
 - Check for response length variation
 
+#### WPScan
+```
+wpscan -u http://target --enumerate users
+```
 
 ### Password brute force - last resort
 
