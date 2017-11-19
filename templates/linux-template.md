@@ -861,6 +861,9 @@ crunch 10 10 -t ,%Curtains -o ./worlist.curtains
 Combine the provided passwd (passwd) and shadow (shadow)(shadow) and redirect them to a file (> unshadowed.txt)
 unshadow passwd shadow > unshadowed.txt
 john --wordlist=rockyou.txt --rules unshadowed.txt 
+
+
+hashcat -D1 --force -m 7300 -a 0 -o cracked.txt /path/hash.txt /path/wordlist.txt
 ```
 ## Web Server
 ```
