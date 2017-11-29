@@ -361,11 +361,10 @@ sqlmap -u http://INSERTIPADDRESS --dbms=mysql --crawl=3
 - Attack
 - Check for response length variation
 
-#### WPScan
+#### Wordpress
 ```
-wordpress
 wpscan -u http://target --enumerate users
-WordPress Admin Access: Appearance->Editor->404 Template
+WordPress Admin Access: Appearance->Editor->404 Template for php
 ```
 
 ### Password brute force - last resort
