@@ -335,7 +335,11 @@ root nameofservice
 note hash.txt=b7c2d6f13a43dce2e44ad120a9cd8a13d0ca23f0414275c0bbe1070d2d1299b1c04da0f1a0f1e4e2537300263a2200000000000000000000140768617368636174:472bdabe2d5d4bffd6add7b3ba79a291d104a9ef
 crack.txt=hashcat
 ```
-
+#### Wordpress
+```
+wpscan -u http://target --enumerate users
+WordPress Admin Access: Appearance->Editor->404 Template
+```
 #### LFI/RFI
 
 ```
