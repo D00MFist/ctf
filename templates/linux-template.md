@@ -363,7 +363,9 @@ sqlmap -u http://INSERTIPADDRESS --dbms=mysql --crawl=3
 
 #### WPScan
 ```
+wordpress
 wpscan -u http://target --enumerate users
+WordPress Admin Access: Appearance->Editor->404 Template
 ```
 
 ### Password brute force - last resort
