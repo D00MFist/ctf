@@ -304,7 +304,13 @@ dirb http://INSERTIPADDRESS -r -o dirb-INSERTIPADDRESS.txt
 # Gobuster - remove relevant responde codes (403 for example)
 gobuster -u http://INSERTIPADDRESS -w /usr/share/seclists/Discovery/Web_Content/common.txt -s '200,204,301,302,307,403,500' -e
 ```
+#### Dirb scan for webapps
+```
+#Settings
+wordlist=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+file extensions=php, pl, sh, asp, html, json, py
 
+```
 INSERTDIRBSCAN
 
 
