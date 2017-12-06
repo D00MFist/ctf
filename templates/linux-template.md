@@ -301,7 +301,7 @@ gobuster -u http://INSERTIPADDRESS -w /usr/share/seclists/Discovery/Web_Content/
 ```
 #Settings
 wordlist=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-file extensions=php, pl, sh, asp, html, json, py
+file extensions=php, pl, sh, asp, html, json, py, cfm, aspx, rb, cgi
 
 ```
 
