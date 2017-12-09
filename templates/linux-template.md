@@ -67,6 +67,11 @@ public keys under /root/.ssh/id_rsa.pub
 if copy to target just rename to authorized_keys to a .ssh directory, can create and put under a user
 ```
 
+##Quick Transfer if we already have ssh access
+```
+open ssh in one terminal
+in another terminal scp filetomove user@TARGETIP:
+```
 INSERTSSHCONNECT
 
 ```
