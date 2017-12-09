@@ -62,6 +62,9 @@ Syntax ftp $IP
 If you have usernames test login with username:username
 ```
 Syntax ssh username@$IP
+
+public keys under /root/.ssh/id_rsa.pub
+if copy to target just rename to authorized_keys to a .ssh directory, can create and put under a user
 ```
 
 INSERTSSHCONNECT
