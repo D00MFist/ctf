@@ -294,8 +294,8 @@ INSERTNIKTOSCAN
 # Not recursive
 dirb http://INSERTIPADDRESS -r -o dirb-INSERTIPADDRESS.txt
 
-# Gobuster - remove relevant responde codes (403 for example)
-gobuster -u http://INSERTIPADDRESS -w /usr/share/seclists/Discovery/Web_Content/common.txt -s '200,204,301,302,307,403,500' -e
+# Gobuster - remove relevant responde codes (404 for example)
+gobuster -u http://INSERTIPADDRESS -w /usr/share/seclists/Discovery/Web_Content/common.txt -s '200,204,301,302,307,403,500' -e -t 50
 ```
 #### Dirb scan for webapps
 ```
