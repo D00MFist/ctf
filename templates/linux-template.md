@@ -462,6 +462,11 @@ post/multi/recon/local_exploit_suggester
 
 # Spawning shell
 python -c 'import pty; pty.spawn("/bin/sh")'
+trick to get up arrow functions, vi, and tab auto completion
+ctrl+z (background)
+stty raw -echo
+hit enter twice
+fg (resume background job)
 
 # Access to more binaries
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
