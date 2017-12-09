@@ -952,6 +952,11 @@ md5sum both to ensure accurate completion
 /usr/share/wordlists/metasploit/unix_passwords.txt
 /usr/share/wordlists/metasploit/unix_users.txt
 ```
+
+## Java (jar) decompiler
+```
+jd-gui
+```
 ## Get many lines onto one line with vim
 ```
 after edited file, often base64 encoded
