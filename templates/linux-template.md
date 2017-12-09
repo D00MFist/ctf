@@ -938,7 +938,13 @@ sqlmap -u 'http://victim.site/view.php?id=1141' -p id --technique=U
 ```
 base64 file
 highlight beginning, hit enter to copy to bottom, ctrl+c, paste
-base64 -d pasted file
+base64 -d pastedfile
 md5sum both to ensure accurate completion
+```
+
+## Best wordlists for quick ctfs
+```
+/usr/share/wordlists/metasploit/unix_passwords.txt
+/usr/share/wordlists/metasploit/unix_users.txt
 ```
 ## How to replicate to gain access again:
