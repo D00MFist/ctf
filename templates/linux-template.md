@@ -733,6 +733,9 @@ cat /etc/shadow
 
 unshadow passwd shadow > unshadowed.txt
 john --rules --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt
+
+https://hashes.org/search.php
+https://hashkiller.co.uk/
 ```
 
 ### Dualhomed
