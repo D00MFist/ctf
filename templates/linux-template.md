@@ -473,11 +473,16 @@ post/multi/recon/local_exploit_suggester
 
 # Spawning shell
 python -c 'import pty; pty.spawn("/bin/sh")'
-trick to get up arrow functions, vi, and tab auto completion
+or
+python3 -c 'import pty; pty.spawn("/bin/sh")'
+
+#Trick to get up arrow functions, vi, and tab auto completion:
 ctrl+z (background)
+stty size
+(this will output rows and cols)--for example 48 and 186
 stty raw -echo
-hit enter twice
 fg (resume background job)
+stty rows 48 cols 186
 
 # Access to more binaries
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
