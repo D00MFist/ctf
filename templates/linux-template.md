@@ -1008,6 +1008,8 @@ exiftool example.fileexample
 Grab contents of files with weird sizes
 ```
 foremost -v examplefile
+or
+binwalk -e examplefile
 ```
 Crack password of a zip without password
 ```
