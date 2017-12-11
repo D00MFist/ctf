@@ -997,7 +997,16 @@ after edited file, often base64 encoded
 :%s/\n//g
 ```
 ## Forensics (data extraction)
+Dont forget to check the file type
 ```
-foremost -v file
+file example.fileexample
+```
+Grab contents of files with weird sizes
+```
+foremost -v examplefile
+```
+Crack password of a zip without password
+```
+fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt example.fileexample
 ```
 ## How to replicate to gain access again:
