@@ -996,4 +996,8 @@ jd-gui
 after edited file, often base64 encoded
 :%s/\n//g
 ```
+## Forensics (data extraction)
+```
+foremost -v file
+```
 ## How to replicate to gain access again:
