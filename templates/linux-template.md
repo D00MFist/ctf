@@ -1001,6 +1001,10 @@ Dont forget to check the file type
 ```
 file example.fileexample
 ```
+Metadata
+```
+exiftool example.fileexample
+```
 Grab contents of files with weird sizes
 ```
 foremost -v examplefile
