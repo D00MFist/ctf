@@ -82,6 +82,17 @@ HELO foo<cr><lf>
 
 nmap --script=smtp-commands,smtp-enum-users,smtp-vuln-cve2010-4344,smtp-vuln-cve2011-1720,smtp-vuln-cve2011-1764 -p 25 INSERTIPADDRESS
 ```
+### Port 53 -DNS
+
+#Using dig and some config settings we can use the server itself to resolve the hostname of the server.+
+
+dig @10.13.37.10 -x 10.13.37.10
+#-x reverse lookup
+#This resolves a hostname for the server. For example www.testsite.com
+nano /etc/hosts/
+
+#add the following
+10.13.37.10 www.testsite.com
 
 ### Port 110 - Pop3
 
